@@ -72,7 +72,7 @@ namespace Sabio.Services.Email
             string subject = $"{model.Subject}";
 
             // time bieng admin email
-            var to = new EmailAddress("ctan.dev@gmail.com");
+            var to = new EmailAddress("removed.dev@gmail.com");
             string plainTextContent = $"{model.Message}";
 
             SendGridMessage msg =
@@ -92,7 +92,7 @@ namespace Sabio.Services.Email
             string tokenLink =
                 $"{_appKeys.DomainName}users/invite?token={token}";
             int board = inviteModel.BoardId;
-            var from = new EmailAddress(_appKeys.DomainEmail, "CT-Dev");
+            var from = new EmailAddress(_appKeys.DomainEmail, "");
             var to = new EmailAddress(inviteModel.Email);
             var subject = "Please confirm your token";
             string plainTextContent = "Please confirm your token";
@@ -142,7 +142,7 @@ namespace Sabio.Services.Email
 
             SendGridMessage msg = new SendGridMessage()
             {
-                From = new EmailAddress(_appKeys.DomainEmail, "CT-Dev"),
+                From = new EmailAddress(_appKeys.DomainEmail, ""),
                 Subject = "Forgot Your Password?",
                 PlainTextContent = "Please reset your password!",
                 HtmlContent = File
