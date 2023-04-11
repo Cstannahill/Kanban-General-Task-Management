@@ -53,7 +53,7 @@ namespace server.Controllers
                 options.LineItems = list;
                 options.Mode = "payment";
                 options.SuccessUrl = domain + "/success?session_id={CHECKOUT_SESSION_ID}";
-                options.CancelUrl = domain + "canceled";
+                options.CancelUrl = domain + "cancelled";
 
                 var service = new SessionService();
                 Session session = service.Create(options);
