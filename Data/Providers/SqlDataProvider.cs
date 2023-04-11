@@ -6,7 +6,6 @@ namespace Data
 {
     public sealed class SqlDataProvider : Data.Providers.IDataProvider
     {
-        private const string LOG_CAT = "DAO";
         private readonly string connectionString;
 
         public SqlDataProvider(string connectionString)
