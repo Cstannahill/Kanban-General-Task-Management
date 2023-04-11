@@ -32,62 +32,6 @@ namespace Sabio.Web.Api.Controllers
             _emailService = emailService;
         }
 
-        //[HttpGet]
-        //public ActionResult<ItemsResponse<User>> GetAll()
-        //{
-        //    int code = 200;
-        //    BaseResponse response = null;
-
-        //    try
-        //    {
-        //        List<User> list = _service.GetAll();
-
-        //        if (list == null)
-        //        {
-        //            code = 404;
-        //            response = new ErrorResponse("Users not found.");
-        //        }
-        //        else
-        //        {
-        //            response = new ItemsResponse<User> { Items = list };
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        code = 500;
-        //        response = new ErrorResponse(ex.Message);
-        //    }
-
-        //    return StatusCode(code, response);
-        //}
-
-        //[HttpGet("{id:int}")]
-        //public ActionResult<ItemResponse<User>> GetById(int id)
-        //{
-        //    int code = 200;
-        //    BaseResponse response = null;
-        //    try
-        //    {
-        //        User user = _service.Get(id);
-
-        //        if (user == null)
-        //        {
-        //            code = 404;
-        //            response = new ErrorResponse("User not found.");
-        //        }
-        //        else
-        //        {
-        //            response = new ItemResponse<User> { Item = user };
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        code = 500;
-        //        response = new ErrorResponse($"Generic Exception Error: {ex.Message}");
-        //    }
-        //    return StatusCode(code, response);
-        //}
-
         [HttpPost]
         [AllowAnonymous]
         public ActionResult<ItemResponse<int>> Create(UserAddRequest model)
@@ -208,44 +152,6 @@ namespace Sabio.Web.Api.Controllers
             return StatusCode(code, response);
         }
 
-        //[HttpPut("{id:int}")]
-        //public ActionResult<ItemResponse<int>> Update(UserUpdateRequest request)
-        //{
-        //    int code = 200;
-        //    BaseResponse response = null;
-
-        //    try
-        //    {
-        //        _service.Update(request);
-
-        //        response = new SuccessResponse();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        code = 500;
-        //        response = new ErrorResponse($"General Exception Error: {ex.Message}");
-        //    }
-        //    return StatusCode(code, response);
-        //}
-
-        //[HttpDelete("{id:int}")]
-        //public ActionResult<SuccessResponse> Delete(int id)
-        //{
-        //    int code = 200;
-        //    BaseResponse response = null;
-
-        //    try
-        //    {
-        //        _service.Delete(id);
-        //        code = 200;
-        //        response = new SuccessResponse();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        code = 500;
-        //        response = new ErrorResponse($"General Exception Error: {ex.Message}");
-        //    }
-        //    return StatusCode(code, response);
-        //}
+        
     }
 }
