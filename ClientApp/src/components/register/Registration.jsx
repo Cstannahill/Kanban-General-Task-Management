@@ -35,7 +35,7 @@ const Registration = () => {
       text: "Please confirm email before logging in",
       icon: "success",
       button: "close",
-    }).then(nav("/confirm"));
+    }).then(nav("/login"));
   };
   const onRegisterError = (err) => {
     console.log("Register User Error ->", err.response);
@@ -175,7 +175,6 @@ const Registration = () => {
                 <Button
                   type="submit"
                   className="user-btn mx-auto"
-                  //   onClick={onRegisterAccount}
                 >
                   <BiUser className="m-1" />
                   {"Sign Up"}
