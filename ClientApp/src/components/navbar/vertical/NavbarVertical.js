@@ -12,7 +12,6 @@ import publicRoutes from "../../../routes/publicRoutes";
 import secRoutes from "../../../routes/securedRoutes";
 import { capitalize } from "../../../helpers/utils";
 import NavbarTopDropDownMenus from "../top/NavbarTopDropDownMenus";
-// import PurchaseCard from "./PurchaseCard";
 import bgNavbar from "../../../assets/img/generic/bg-navbar.png";
 
 const NavbarVertical = () => {
@@ -52,31 +51,7 @@ const NavbarVertical = () => {
     clearTimeout(time);
     HTMLClassList.remove("navbar-vertical-collapsed-hover");
   };
-  // const routes = authProtectedFlattenRoutes.concat(
-  //   publicProtectedFlattenRoutes
-  // );
-
-  // var routeLabels = [];
-  // routes.forEach((e) => {
-  //   if (!routeLabels.includes(e.label)) {
-  //     routeLabels.push(e.label);
-  //   }
-  // });
-  // console.log(routeLabels);
-
-  // // eslint-disable-next-line array-callback-return
-  // routeLabels = routeLabels.map((e) => {
-  //   let routeObj = {};
-  //   routeObj.label = e;
-  //   routeObj.children = [];
-  //   routes.forEach((r) => {
-  //     if (routeObj.label === r.label) {
-  //       routeObj.children.push(r);
-  //     }
-  //   });
-  //   return routeObj;
-  // });
-  // console.log(routes, routeLabels);
+  
   const NavbarLabel = ({ label }) => (
     <Nav.Item as="li" index={Math.random(1000)}>
       <Row className="mt-3 mb-2 navbar-vertical-label-wrapper">
