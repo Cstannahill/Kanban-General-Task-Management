@@ -21,7 +21,7 @@ const TopNavRightSideNavItem = () => {
       className="navbar-nav-icons ms-auto flex-row align-items-center"
       as="ul"
     >
-      {/* <Nav.Item as={"li"}>
+       <Nav.Item as={"li"}>
         <Nav.Link
           className="px-2 theme-control-toggle"
           onClick={() => setConfig("isDark", !isDark)}
@@ -43,11 +43,8 @@ const TopNavRightSideNavItem = () => {
             </div>
           </OverlayTrigger>
         </Nav.Link>
-      </Nav.Item> */}
+      </Nav.Item>
       <SettingsToggle />
-      {/* <CartNotification />
-      <NotificationDropdown />
-      <NineDotMenu /> */}
       <ProfileDropdown />
     </Nav>
   );
