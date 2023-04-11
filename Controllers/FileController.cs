@@ -34,23 +34,6 @@ namespace Web.Api.Controllers
             return res;
         }
     }
-    //public async Task<ActionResult<SuccessResponse>> UploadFile(List<IFormFile> files)
-    //{
-    //    ObjectResult result = null;
-    //    Console.WriteLine(files);
-    //    try
-    //    {
-    //        _fileService.UploadFile(files);
-    //        SuccessResponse res = new SuccessResponse();
-    //        result = StatusCode(200, res);
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        ErrorResponse response = new ErrorResponse(ex.Message);
-    //        result = StatusCode(500, response);
-    //    }
-
-    //    return result;
-    //}
+    
 }
 
